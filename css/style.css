@@ -8,13 +8,14 @@ a{
 /*---TILES START---*/
 .question-bank {
     
-    background-color: #3498db;
+    background-color: #22A7F0;
     overflow: hidden;
     height: auto;
     color: white;
     padding: 0 10px 0 10px;
     font-size: 120%;
     text-align: center;
+    -webkit-transition: background 1s;
     transition: background 1s;
 }
 
@@ -27,6 +28,7 @@ a{
     padding: 0 10px 0 10px;
     font-size: 120%;
     text-align: center;
+    -webkit-transition: background 1s;
     transition: background 1s;
     
 }
@@ -41,7 +43,9 @@ a{
     padding: 0 10px 0 10px;
     font-size: 120%;
     text-align: center;
+    -webkit-transition: background 1s;
     transition: background 1s;
+    
 }
 
 
@@ -51,6 +55,7 @@ a{
     margin-top: 70px;
     margin-left: -10px;
 }
+
 .test-slide{
     
     background-color: #1abc9c;
@@ -60,12 +65,13 @@ a{
     padding: 0 10px 0 10px;
     font-size: 120%;
     text-align: center;
+    -webkit-transition: background 1s;
     transition: background 1s;
 }
 /*----------------*/
 /*HOVER EFFECTS AND ANIMATIONS*/
 /*---HOVER TILE---*/
-.question-bank:hover { background-color: #27ae60;}
+.question-bank:hover { background-color: #4183D7;}
 .create-test:hover{background-color: #9b59b6;}
 .study-mat:hover{background-color:#e74c3c;}
 .test-slide:hover{background-color: #e67e22;}
@@ -75,5 +81,7 @@ a{
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
 }
+
+
 
 

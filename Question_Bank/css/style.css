@@ -23,16 +23,17 @@ body {
 /*---TILES START---*/
 .question-bank {
     
-    background-color: #22A7F0;
+    background-color: #F4F4EF;
     overflow: hidden;
     width: auto;
     height: 300px;
-    color: white;
+    
     padding: 0 10px 0 10px;
     font-size: 150%;
     text-align: center;
     -webkit-transition: background 1s;
     transition: background 1s;
+    background: #02B3E4;
 }
 /* .button */
 
@@ -43,13 +44,15 @@ body {
     outline:none;
     overflow: hidden;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.7em;
     outline: none;
     color: #FFF;
     background: transparent;
     font-family: 'raleway', sans-serif;
     width: auto;
     height: 300px;
+    text-decoration: none !important;
+    
 }
 
 .button span {
@@ -99,6 +102,7 @@ body {
     -ms-transform: translate(150%,0);
     -o-transform: translate(150%,0);
     transform: translate(150%,0);
+    
 }
 
 /* Span on :hover and :active */
@@ -111,6 +115,7 @@ body {
     -ms-transform: scale(0.3);
     -o-transform: scale(0.3);
     transform: scale(0.3);
+    
 }
 
 /*  
@@ -130,6 +135,7 @@ body {
     -moz-transition-delay: .4s;
     -o-transition-delay: .4s;
     transition-delay: .4s;
+    background-color: #1abc9c;
 }
 
 .glyphicon-cloud-upload{
@@ -149,7 +155,7 @@ h2{
 /*----------------*/
 /*HOVER EFFECTS AND ANIMATIONS*/
 /*---HOVER TILE---*/
-.question-bank:hover { background-color: #4183D7;}
+.question-bank:hover { background-color:#1abc9c;}
 
 /*----------------*/
 /*ANIMATIONS-REFER ANIMATE.CSS STYLESHEET*/

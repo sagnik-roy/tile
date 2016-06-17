@@ -28,8 +28,9 @@ body {
     width: auto;
     height: 300px;
     
-    padding: 0 10px 0 10px;
-    font-size: 150%;
+    padding: 0 10px 5px 10px !important;
+    margin-bottom: 10px !important;
+    font-size: 120%;
     text-align: center;
     -webkit-transition: background 1s;
     transition: background 1s;
@@ -177,7 +178,7 @@ body {
 }
 
 p {
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-family: 'Lato', sans-serif;
     background-color: #fff;
     padding: 1em;
@@ -185,4 +186,6 @@ p {
     margin-top: 0;
 }
 
-
+.glyphicon{
+    font-size: 200%;
+}

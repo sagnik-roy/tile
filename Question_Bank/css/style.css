@@ -1,9 +1,6 @@
 /*CHANGING LINK COLOR*/
 
-/*a{
-     color: #ffffff !important;
-}*/
-/*----------------*/
+
 body {
     background: url('../images/background.png');
     
@@ -21,7 +18,7 @@ body {
 }
 
 /*---TILES START---*/
-.question-bank {
+.question-bank-tile {
     
     background-color: #F4F4EF;
     overflow: hidden;
@@ -139,16 +136,7 @@ body {
     background-color: #1abc9c;
 }
 
-.glyphicon-cloud-upload{
-    font-size: 1.9em;
-}
-
-h2{
-    font-size: 300%;
-}
-
-
-.row{
+.question-bank-tile{
     margin-top: 70px;
     margin-left: -10px;
 }
@@ -156,34 +144,17 @@ h2{
 /*----------------*/
 /*HOVER EFFECTS AND ANIMATIONS*/
 /*---HOVER TILE---*/
-.question-bank:hover { background-color:#1abc9c;}
+.question-bank-tile:hover { background-color:#1abc9c;}
 
 /*----------------*/
 /*ANIMATIONS-REFER ANIMATE.CSS STYLESHEET*/
-.question-bank .create-test .study-mat .test-slide.rubberBand {
-  -webkit-animation-name: rubberBand;
-  animation-name: rubberBand;
-}
+
 *,
 *:before,
 *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-body {
-    text-align: center;
-   
-}
-
-p {
-    font-size: 1.4em;
-    font-family: 'Lato', sans-serif;
-    background-color: #fff;
-    padding: 1em;
-    color: #002240;
-    margin-top: 0;
 }
 
 .glyphicon{

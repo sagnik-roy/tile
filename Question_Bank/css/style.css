@@ -24,7 +24,6 @@ body {
     overflow: hidden;
     width: auto;
     height: 300px;
-    
     padding: 0 10px 5px 10px !important;
     margin-bottom: 10px !important;
     font-size: 120%;
@@ -33,6 +32,33 @@ body {
     transition: background 1s;
     background: #02B3E4;
 }
+.curriculum-tile{
+    background-color: #F4F4EF;
+    overflow: hidden;
+    width: auto;
+    height: 200px;
+    margin-bottom: 10px !important;
+    font-size: 120%;
+    text-align: center;
+    -webkit-transition: background 1s;
+    transition: background 1s;
+    background: #02B3E4;
+    margin-left: 1px !important;
+}
+
+.admin-dash-question-bank-tile{
+    background-color: #F4F4EF;
+    overflow: hidden;
+    width: auto;
+    height: 200px;
+    margin-bottom: 10px !important;
+    font-size: 120%;
+    text-align: center;
+    -webkit-transition: background 1s;
+    transition: background 1s;
+    background: #02B3E4;
+}
+
 /* .button */
 
 #tile-button {
@@ -42,7 +68,8 @@ body {
     outline:none;
     overflow: hidden;
     text-decoration: none;
-    font-size: 1.7em;
+    font-size: 1.4em;
+    padding-bottom: 90px;
     outline: none;
     color: #FFF;
     background: transparent;
@@ -74,6 +101,7 @@ body {
     width: 100%;
     text-align: center;
     opacity: 0;
+    padding-top: 10px;
     -webkit-transition: .4s,opacity .6s;
     -moz-transition: .4s,opacity .6s;
     -o-transition: .4s,opacity .6s;
@@ -136,15 +164,230 @@ body {
     background-color: #1abc9c;
 }
 
-.question-bank-tile{
-    margin-top: 70px;
+.question-bank-tile,
+.curriculum-tile{
+    margin-top: 40px;
     margin-left: -10px;
 }
+/*CURRICULUM TILE BUTTON*/
+
+#curriculum-tile-button {
+    display: inline-block;
+    position: relative;
+    border: none;
+    outline:none;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding-bottom: 90px;
+    outline: none;
+    color: #FFF;
+    background: transparent;
+    font-family: 'raleway', sans-serif;
+    width: auto;
+    height: 300px;
+    text-decoration: none !important;
+    
+}
+
+#curriculum-tile-button span {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+#curriculum-tile-button:before,
+#curriculum-tile-button:after {
+    content: '';
+    position: absolute;
+    font-size: 1em;
+    top: 1em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    padding-top: 20px;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s;
+}
+
+/* :before */
+
+#curriculum-tile-button:before {
+    content: attr(data-hover);
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+}
+
+/* :after */
+
+#curriculum-tile-button:after {
+    content: attr(data-active);
+    -webkit-transform: translate(150%,0);
+    -moz-transform: translate(150%,0);
+    -ms-transform: translate(150%,0);
+    -o-transform: translate(150%,0);
+    transform: translate(150%,0);
+    
+}
+
+/* Span on :hover and :active */
+
+#curriculum-tile-button:hover span,
+#curriculum-tile-button:active span {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+    
+}
+
+/*  
+    We show :before pseudo-element on :hover 
+    and :after pseudo-element on :active 
+*/
+
+#curriculum-tile-button:hover:before,
+#curriculum-tile-button:active:after {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+    background-color: #1abc9c;
+}
+
+
+/*FACULTY ADMIN DASHBOARD TILE BUTTON*/
+#dashboard-faculty-tile-button {
+    display: inline-block;
+    position: relative;
+    border: none;
+    outline:none;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 2em;
+    
+    outline: none;
+    color: #FFF;
+    background: transparent;
+    font-family: 'raleway', sans-serif;
+    width: auto;
+    height: 200px;
+    text-decoration: none !important;
+    
+}
+
+#dashboard-faculty-tile-button span {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+#dashboard-faculty-tile-button:before,
+#dashboard-faculty-tile-button:after {
+    content: '';
+    position: absolute;
+    font-size: 0.8em;
+    top: 1em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    padding-top: 20px;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s;
+}
+
+/* :before */
+
+#dashboard-faculty-tile-button:before {
+    content: attr(data-hover);
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+}
+
+/* :after */
+
+#dashboard-faculty-tile-button:after {
+    content: attr(data-active);
+    -webkit-transform: translate(150%,0);
+    -moz-transform: translate(150%,0);
+    -ms-transform: translate(150%,0);
+    -o-transform: translate(150%,0);
+    transform: translate(150%,0);
+    
+}
+
+/* Span on :hover and :active */
+
+#dashboard-faculty-tile-button:hover span,
+#dashboard-faculty-tile-button:active span {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+    
+}
+
+
+/*  
+    We show :before pseudo-element on :hover 
+    and :after pseudo-element on :active 
+*/
+
+#dashboard-faculty-tile-button:hover:before,
+#dashboard-faculty-button:active:after {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+    background-color: #1abc9c;
+}
+
+
 
 /*----------------*/
 /*HOVER EFFECTS AND ANIMATIONS*/
 /*---HOVER TILE---*/
 .question-bank-tile:hover { background-color:#1abc9c;}
+.curriculum-tile:hover { background-color:#1abc9c;}
+.admin-dash-question-bank-tile:hover{ background-color:#1abc9c;}
 
 /*----------------*/
 /*ANIMATIONS-REFER ANIMATE.CSS STYLESHEET*/
